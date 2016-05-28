@@ -19,7 +19,7 @@ Artwork by [i5ting](http://www.github.com/i5ting/).
 
 ## Code
 
-### express
+### koa
 
 ```
 var mount_uploadify = require('uploadify')
@@ -28,9 +28,7 @@ mount_uploadify(app,{
   path:'/fileupload',
   fileKey:'myfile',
   multer:{ dest: 'uploads/' },
-  callback:function(req){
-    console.log(111);
-    return req.files
+ 
   }
 });
 ```
@@ -51,8 +49,7 @@ mount_uploadify(app,{
   path: '/fileupload',
   fileKey: 'myfile',
   multer: simditor_qn_config.multer,
-  callback: function(req){
-      console.log(req);
+  
   }
 });
 ```
